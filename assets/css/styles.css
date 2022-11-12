@@ -4,6 +4,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
+  /* https://colors.dopely.top/color-pedia/ff7348 */
   /*Color mode HSL(hue, saturation, lightness)*/
   /*
       Blue: hsl(207, 90%, 61%)
@@ -12,11 +13,21 @@
       Teal: hsl(174, 63%, 62%)
   */
 
+  /* Blue */
   --hue: 207;
   --sat: 90%;
   --lig: 61%;
+
+  /* Purple */
+  /* --hue: 250;
+  --sat: 66%;
+  --lig: 75%; */
+
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  /* Blue */
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+  /* Purple */
+  /* --first-color-alt: hsl(var(--hue), var(--sat), 71%);  */
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -526,7 +537,7 @@ body.dark-theme {
   }
 
   .profile__perfil {
-    width: 90px;
+    width: 90px auto;
   }
 
   .profile__profession {
