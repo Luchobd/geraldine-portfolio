@@ -14,20 +14,20 @@
   */
 
   /* Blue */
-  --hue: 207;
+  /* --hue: 207;
   --sat: 90%;
-  --lig: 61%;
+  --lig: 61%; */
 
   /* Purple */
-  /* --hue: 250;
+  --hue: 250;
   --sat: 66%;
-  --lig: 75%; */
+  --lig: 75%;
 
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   /* Blue */
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+  /* --first-color-alt: hsl(var(--hue), var(--sat), 57%); */
   /* Purple */
-  /* --first-color-alt: hsl(var(--hue), var(--sat), 71%);  */
+  --first-color-alt: hsl(var(--hue), var(--sat), 71%);
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -143,7 +143,7 @@ body.dark-theme {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
+  max-width: 768px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -226,14 +226,15 @@ body.dark-theme {
 }
 
 /* Modificar aca iria el About me */
-.profile__info {
-  grid-template-columns: repeat(3, max-content);
-  justify-content: center;
+/* .profile__info {
+  grid-template-columns: repeat(3, max-content); 
+   justify-content: center;
   column-gap: 2.5rem;
-}
+} */
 
 .profile__info-group {
-  text-align: center;
+  text-align: justify;
+  margin: 0 20px;
 }
 
 .profile__info-number {
@@ -485,6 +486,7 @@ body.dark-theme {
   }
 }
 /* For medium devices */
+
 @media screen and (min-width: 576px) {
   .projects__content {
     grid-template-columns: 332px;
